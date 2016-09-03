@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  date: 2016-09-03
+  price: 1
+  location: MyString
+  picture_url: MyString
+  comment: MyString
+
+two:
+  user: MyString
+  date: 2016-09-03
+  price: 1
+  location: MyString
+  picture_url: MyString
+  comment: MyString
