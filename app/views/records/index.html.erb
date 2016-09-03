@@ -1,7 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1>今月の油そば</h1>
+<% if @total_spent.first != nil %>
 <h2>今月一番油そばを食している油人は<%= @total_spent.first.user %>さんです。</h2>
+<% else %>
+<h2>今月はまだ誰も油そばを食べていません。</h2>
+<% end %>
+
 
 <%= link_to '記録を登録する', new_record_path %>
 
