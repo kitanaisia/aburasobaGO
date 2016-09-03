@@ -19,6 +19,7 @@ class RecordsController < ApplicationController
   # GET /records/new
   def new
     @record = Record.new
+    @record.user = current_user.email
   end
 
   # GET /records/1/edit
