@@ -1,24 +1,22 @@
-# README
+油そばGO
+========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 使い方
+今後記載予定
 
-Things you may want to cover:
+### Future work
+* Twitterユーザ認証
+* メール送信(Sendgrid)
+* 画像の埋め込み表示
+* 月毎の記録に変更
+* Locationを選択式にする
+* メニューを選択式にする
+* UI改良
+ - 文字サイズ
+ - ボタンサイズ
+ - 完全日本語化
+* トッピングのラジオボタンによる選択
+* 煽り文句の追加
+ - ランキング方式にしてTOP3を表示する?
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+powered by ruby on rails
