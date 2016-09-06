@@ -19,4 +19,8 @@
 * 煽り文句の追加
  - ランキング方式にしてTOP3を表示する?
 
+### LICENSE 
+MIT
+
 powered by ruby on rails
+
