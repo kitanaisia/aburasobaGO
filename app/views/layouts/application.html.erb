@@ -12,7 +12,7 @@
     <p class="alert"><%= alert %></p>
     <%= yield %>
     <% if user_signed_in? %>
-      <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p>
+      <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-warning" %></p>
     <% end %>
   </body>
 </html>

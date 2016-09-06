@@ -1,6 +1,10 @@
 <h1>Editing Record</h1>
 
+<p>
 <%= render 'form', record: @record %>
+</p>
 
-<%= link_to 'Show', @record %> |
-<%= link_to 'Back', records_path %>
+<p>
+<%= link_to 'Show', @record, class: "btn btn-default" %>
+<%= link_to 'Back', records_path, class: "btn btn-default" %>
+</p>
