@@ -8,7 +8,7 @@ class RecordsController < ApplicationController
 
     # ユーザ毎の合計消費金額
     @total_spent = Record.select('"user", sum(price) AS spent').group(:user).order("spent DESC" )
-    p @total_spent
+    @user_spent = @total_spent.where('"user" = ?', current_user.email)
   end
 
   # GET /records/1

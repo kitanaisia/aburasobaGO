@@ -2,11 +2,16 @@
 
 <h1>#油そばGO</h1>
 <% if @total_spent.first != nil %>
-<h2>今月一番油そばを食している油人は<%= @total_spent.first.user %>さんです。</h2>
+  <h2>今月一番油そばを食している油人は<%= @total_spent.first.user %>さんです。</h2>
 <% else %>
-<h2>今月はまだ誰も油そばを食べていません。</h2>
+  <h2>今月はまだ誰も油そばを食べていません。</h2>
 <% end %>
 
+<% if @user_spent.first != nil %>
+  <h3>今月<%= current_user.email %>さんが油そばに使ったお金は<%= @user_spent.first.spent %>円です。</h3>
+<% else %>
+  <h3>今月<%= current_user.email %>さんはまだ油そばを食べていません。</h3>
+<% end %>
 
 <%= link_to '記録を登録する', new_record_path , class: "btn btn-primary" %>
 
@@ -28,14 +33,14 @@
       <tr>
         <td><%= record.user %></td>
         <td><%= record.date %></td>
-        <td><%= record.price %></td>
+        <td><%= record.price %>円</td>
         <td><%= record.location %></td>
         <td><%= record.picture_url %></td>
         <td><%= record.comment %></td>
         <td><%= link_to '詳細を見る', record %></td>
         <% if record.user == current_user.email %>
         <td><%= link_to '編集', edit_record_path(record) %></td>
-        <td><%= link_to '破棄', record, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '破棄', record, method: :delete %></td>
         <% end %>
       </tr>
     <% end %>
