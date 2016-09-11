@@ -1,6 +1,9 @@
 油そばGO
 ========
 
+### URL
+[油そばGO:http://aburasoba-go.herokuapp.com/](http://aburasoba-go.herokuapp.com/)
+
 ### 使い方
 今後記載予定
 
